@@ -40,7 +40,7 @@ get_package_manager() {
     if command -v yum >/dev/null 2>&1; then
         echo "yum (RHEL/CentOS)"
     fi
-    # Add more package managers here
+
 }
 
 # Function to prompt for user choice
@@ -113,9 +113,12 @@ fi
 
 # List of packages to install
 packages_to_install=(
-    package1
-    package2
-    package3
+    vlc
+    gimp
+    keepassxc
+    git
+    curl
+    krdc
     # Add more packages here
 )
 
